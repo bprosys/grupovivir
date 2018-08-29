@@ -1,0 +1,7 @@
+<?php
+$module_name = 'AOS_Product_Categories';
+$listViewDefs [$module_name] = 
+array (
+);
+;
+?>

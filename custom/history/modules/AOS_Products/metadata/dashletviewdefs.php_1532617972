@@ -1,0 +1,122 @@
+<?php
+$dashletData['AOS_ProductsDashlet']['searchFields'] = array (
+  'name' => 
+  array (
+    'default' => '',
+  ),
+  'maincode' => 
+  array (
+    'default' => '',
+  ),
+  'type' => 
+  array (
+    'default' => '',
+  ),
+  'price' => 
+  array (
+    'default' => '',
+  ),
+  'estado_c' => 
+  array (
+    'default' => '',
+  ),
+  'modelo_c' => 
+  array (
+    'default' => '',
+  ),
+  'metraje_c' => 
+  array (
+    'default' => '',
+  ),
+);
+$dashletData['AOS_ProductsDashlet']['columns'] = array (
+  'name' => 
+  array (
+    'width' => '40%',
+    'label' => 'LBL_LIST_NAME',
+    'link' => true,
+    'default' => true,
+    'name' => 'name',
+  ),
+  'type' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_TYPE',
+    'width' => '10%',
+  ),
+  'metraje_c' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_METRAJE',
+    'width' => '10%',
+  ),
+  'modelo_c' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_MODELO',
+    'width' => '10%',
+  ),
+  'estado_c' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_ESTADO',
+    'width' => '10%',
+  ),
+  'piso_c' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_PISO',
+    'width' => '10%',
+  ),
+  'price' => 
+  array (
+    'type' => 'currency',
+    'label' => 'LBL_PRICE',
+    'currency_format' => true,
+    'width' => '10%',
+    'default' => true,
+  ),
+  'date_modified' => 
+  array (
+    'width' => '15%',
+    'label' => 'LBL_DATE_MODIFIED',
+    'name' => 'date_modified',
+    'default' => false,
+  ),
+  'created_by' => 
+  array (
+    'width' => '8%',
+    'label' => 'LBL_CREATED',
+    'name' => 'created_by',
+    'default' => false,
+  ),
+  'assigned_user_name' => 
+  array (
+    'width' => '8%',
+    'label' => 'LBL_LIST_ASSIGNED_USER',
+    'name' => 'assigned_user_name',
+    'default' => false,
+  ),
+  'description' => 
+  array (
+    'type' => 'text',
+    'label' => 'LBL_DESCRIPTION',
+    'sortable' => false,
+    'width' => '10%',
+    'default' => false,
+  ),
+  'date_entered' => 
+  array (
+    'width' => '15%',
+    'label' => 'LBL_DATE_ENTERED',
+    'default' => false,
+    'name' => 'date_entered',
+  ),
+);

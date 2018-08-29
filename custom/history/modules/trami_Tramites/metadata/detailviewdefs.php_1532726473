@@ -1,0 +1,364 @@
+<?php
+$module_name = 'trami_Tramites';
+$_object_name = 'trami_tramites';
+$viewdefs [$module_name] = 
+array (
+  'DetailView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'maxColumns' => '2',
+      'form' => 
+      array (
+      ),
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'useTabs' => false,
+      'tabDefs' => 
+      array (
+        'LBL_EDITVIEW_PANEL1' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL2' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'DEFAULT' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+      'syncDetailEditViews' => true,
+    ),
+    'panels' => 
+    array (
+      'lbl_editview_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'trami_tramites_aos_products_1_name',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'trami_tramites_aos_product_categories_1_name',
+          ),
+          1 => 
+          array (
+            'name' => 'trami_tramites_accounts_2_name',
+          ),
+        ),
+      ),
+      'lbl_editview_panel2' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'banco_c',
+            'studio' => 'visible',
+            'label' => 'LBL_BANCO',
+          ),
+          1 => 
+          array (
+            'name' => 'monto_financiado_c',
+            'label' => 'LBL_MONTO_FINANCIADO',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'tipopago_c',
+            'studio' => 'visible',
+            'label' => 'LBL_TIPOPAGO',
+          ),
+          1 => 
+          array (
+            'name' => 'dias_trascurridos',
+            'studio' => 'visible',
+            'label' => 'LBL_DIAS_TRASCURRIDOS',
+          ),
+        ),
+      ),
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'numerodefinca_c',
+            'label' => 'LBL_NUMERODEFINCA',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fecha_permiso_ocupacion_c',
+            'label' => 'LBL_FECHA_PERMISO_OCUPACION',
+          ),
+          1 => 
+          array (
+            'name' => 'comentario_permiso_ocupacion_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMENTARIO_PERMISO_OCUPACION',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fecha_permiso_construccion_c',
+            'label' => 'LBL_FECHA_PERMISO_CONSTRUCCION',
+          ),
+          1 => 
+          array (
+            'name' => 'comentario_permiso_construcc_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMENTARIO_PERMISO_CONSTRUCC',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'carta_promesa_pago_c',
+            'label' => 'LBL_CARTA_PROMESA_PAGO',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'envio_paz_y_salvo_mant_c',
+            'label' => 'LBL_ENVIO_PAZ_Y_SALVO_MANT',
+          ),
+          1 => 
+          array (
+            'name' => 'comentario_paz_salvo_mant_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMENTARIO_PAZ_SALVO_MANT',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'envio_paz_y_salvo_idaan_c',
+            'label' => 'LBL_ENVIO_PAZ_Y_SALVO_IDAAN',
+          ),
+          1 => 
+          array (
+            'name' => 'comentarios_paz_salvo_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMENTARIOS_PAZ_SALVO',
+          ),
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fecha_recibo_contrato_c',
+            'label' => 'LBL_FECHA_RECIBO_CONTRATO',
+          ),
+          1 => 
+          array (
+            'name' => 'comentario_fecha_recibo_cont_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMENTARIO_FECHA_RECIBO_CONT',
+          ),
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'envio_paz_y_salvo_inmueble_c',
+            'label' => 'LBL_ENVIO_PAZ_Y_SALVO_INMUEBLE',
+          ),
+          1 => 
+          array (
+            'name' => 'comentario_paz_salvo_inm_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMENTARIO_PAZ_SALVO_INM',
+          ),
+        ),
+        8 => 
+        array (
+          0 => 
+          array (
+            'name' => 'recibido_protocolo_c',
+            'label' => 'LBL_RECIBIDO_PROTOCOLO',
+          ),
+          1 => 
+          array (
+            'name' => 'comentario_recibo_prot_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMENTARIO_RECIBO_PROT',
+          ),
+        ),
+        9 => 
+        array (
+          0 => 
+          array (
+            'name' => 'envio_protocolo_c',
+            'label' => 'LBL_ENVIO_PROTOCOLO',
+          ),
+          1 => 
+          array (
+            'name' => 'comentario_envio_protocolo_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMENTARIO_ENVIO_PROTOCOLO',
+          ),
+        ),
+        10 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fecha_desembolso_c',
+            'label' => 'LBL_FECHA_DESEMBOLSO',
+          ),
+          1 => 
+          array (
+            'name' => 'comentario_fecha_desembolso_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMENTARIO_FECHA_DESEMBOLSO',
+          ),
+        ),
+        11 => 
+        array (
+          0 => 
+          array (
+            'name' => 'valor_desembolso_c',
+            'label' => 'LBL_VALOR_DESEMBOLSO',
+          ),
+          1 => 
+          array (
+            'name' => 'comentario_valor_desembolso_c',
+            'label' => 'LBL_COMENTARIO_VALOR_DESEMBOLSO',
+          ),
+        ),
+        12 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fecha_registro_c',
+            'label' => 'LBL_FECHA_REGISTRO',
+          ),
+          1 => 
+          array (
+            'name' => 'comentario_fecha_registro_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMENTARIO_FECHA_REGISTRO',
+          ),
+        ),
+        13 => 
+        array (
+          0 => 
+          array (
+            'name' => 'pago_del_dospuntocinco_c',
+            'label' => 'LBL_PAGO_DEL_DOSPUNTOCINCO',
+          ),
+          1 => 
+          array (
+            'name' => 'comentario_2_5_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMENTARIO_2_5',
+          ),
+        ),
+        14 => 
+        array (
+          0 => 
+          array (
+            'name' => 'envio_tasa_unica_banco_c',
+            'label' => 'LBL_ENVIO_TASA_UNICA_BANCO',
+          ),
+          1 => 
+          array (
+            'name' => 'comentario_tasa_unica_bco_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMENTARIO_TASA_UNICA_BCO',
+          ),
+        ),
+        15 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fecha_firma_contrato_c',
+            'label' => 'LBL_FECHA_FIRMA_CONTRATO',
+          ),
+          1 => 
+          array (
+            'name' => 'comentario_firma_contrato_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMENTARIO_FIRMA_CONTRATO',
+          ),
+        ),
+        16 => 
+        array (
+          0 => 
+          array (
+            'name' => 'minuta_de_lib_recibida_c',
+            'label' => 'LBL_MINUTA_DE_LIB_RECIBIDA',
+          ),
+          1 => 
+          array (
+            'name' => 'comentario_min_lib_rec_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMENTARIO_MIN_LIB_REC',
+          ),
+        ),
+        17 => 
+        array (
+          0 => 
+          array (
+            'name' => 'minuta_de_ventas_recibida_c',
+            'label' => 'LBL_MINUTA_DE_VENTAS_RECIBIDA',
+          ),
+          1 => 
+          array (
+            'name' => 'comentario_min_ventas_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMENTARIO_MIN_VENTAS',
+          ),
+        ),
+        18 => 
+        array (
+          0 => 
+          array (
+            'name' => 'comentarios_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMENTARIOS',
+          ),
+          1 => 
+          array (
+            'name' => 'comentarios_del_banco_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMENTARIOS_DEL_BANCO',
+          ),
+        ),
+      ),
+    ),
+  ),
+);
+;
+?>

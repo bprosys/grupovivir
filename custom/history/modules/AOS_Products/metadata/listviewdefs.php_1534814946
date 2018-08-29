@@ -1,0 +1,125 @@
+<?php
+$listViewDefs ['AOS_Products'] = 
+array (
+  'NAME' => 
+  array (
+    'width' => '15%',
+    'label' => 'LBL_NAME',
+    'default' => true,
+    'link' => true,
+  ),
+  'PISO_C' => 
+  array (
+    'type' => 'int',
+    'default' => true,
+    'label' => 'LBL_PISO',
+    'width' => '10%',
+  ),
+  'PRICE' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_PRICE',
+    'currency_format' => true,
+    'default' => true,
+  ),
+  'ESTADO_C' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_ESTADO',
+    'width' => '10%',
+  ),
+  'METRAJE_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_METRAJE',
+    'width' => '10%',
+  ),
+  'DATE_ENTERED' => 
+  array (
+    'width' => '5%',
+    'label' => 'LBL_DATE_ENTERED',
+    'default' => true,
+  ),
+  'TORRE_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_TORRE',
+    'width' => '10%',
+  ),
+  'AOS_PRODUCT_CATEGORY_NAME' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_AOS_PRODUCT_CATEGORYS_NAME',
+    'id' => 'AOS_PRODUCT_CATEGORY_ID',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+    'related_fields' => 
+    array (
+      0 => 'aos_product_category_id',
+    ),
+  ),
+  'MODELO_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_MODELO',
+    'width' => '10%',
+  ),
+  'ALA_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => false,
+    'label' => 'LBL_ALA',
+    'width' => '10%',
+  ),
+  'DESCUENTO_C' => 
+  array (
+    'type' => 'decimal',
+    'default' => false,
+    'label' => 'LBL_DESCUENTO',
+    'width' => '10%',
+  ),
+  'CODIGO_UNIDAD_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => false,
+    'label' => 'LBL_CODIGO_UNIDAD',
+    'width' => '10%',
+  ),
+  'TERRAZA_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => false,
+    'label' => 'LBL_TERRAZA',
+    'width' => '10%',
+  ),
+  'BANOS_C' => 
+  array (
+    'type' => 'int',
+    'default' => false,
+    'label' => 'LBL_BANOS',
+    'width' => '10%',
+  ),
+  'DEPOSITOS_C' => 
+  array (
+    'type' => 'int',
+    'default' => false,
+    'label' => 'LBL_DEPOSITOS',
+    'width' => '10%',
+  ),
+  'ESTACIONAMIENTOS_C' => 
+  array (
+    'type' => 'int',
+    'default' => false,
+    'label' => 'LBL_ESTACIONAMIENTOS',
+    'width' => '10%',
+  ),
+);
+;
+?>

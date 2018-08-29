@@ -1,0 +1,60 @@
+[04-Jul-2018 11:14:28 America/Chicago] PHP Notice:  Array to string conversion in /home3/m3w0hhnr/public_html/extra/php/query.php on line 78
+[04-Jul-2018 11:14:45 America/Chicago] PHP Notice:  Array to string conversion in /home3/m3w0hhnr/public_html/extra/php/query.php on line 78
+[04-Jul-2018 11:45:50 America/Chicago] PHP Notice:  Undefined index: data in /home3/m3w0hhnr/public_html/extra/php/query.php on line 46
+[04-Jul-2018 11:47:01 America/Chicago] PHP Notice:  Undefined index: data in /home3/m3w0hhnr/public_html/extra/php/query.php on line 46
+[04-Jul-2018 14:41:37 America/Chicago] PHP Notice:  Undefined index: data in /home3/m3w0hhnr/public_html/extra/php/query.php on line 46
+[04-Jul-2018 14:43:11 America/Chicago] PHP Fatal error:  Cannot use [] for reading in /home3/m3w0hhnr/public_html/extra/php/query.php on line 46
+[04-Jul-2018 14:43:26 America/Chicago] PHP Fatal error:  Cannot use [] for reading in /home3/m3w0hhnr/public_html/extra/php/query.php on line 46
+[04-Jul-2018 14:43:41 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home3/m3w0hhnr/public_html/extra/php/query.php on line 46
+[04-Jul-2018 14:44:23 America/Chicago] PHP Notice:  Undefined variable: email in /home3/m3w0hhnr/public_html/extra/php/query.php on line 57
+[04-Jul-2018 14:45:55 America/Chicago] PHP Notice:  Undefined variable: email in /home3/m3w0hhnr/public_html/extra/php/query.php on line 57
+[04-Jul-2018 14:48:50 America/Chicago] PHP Notice:  Undefined variable: email in /home3/m3w0hhnr/public_html/extra/php/query.php on line 57
+[04-Jul-2018 14:52:09 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home3/m3w0hhnr/public_html/extra/php/query.php on line 46
+[04-Jul-2018 14:52:44 America/Chicago] PHP Notice:  Undefined variable: email in /home3/m3w0hhnr/public_html/extra/php/query.php on line 57
+[04-Jul-2018 14:53:28 America/Chicago] PHP Notice:  Undefined variable: email in /home3/m3w0hhnr/public_html/extra/php/query.php on line 57
+[04-Jul-2018 14:53:31 America/Chicago] PHP Notice:  Undefined variable: email in /home3/m3w0hhnr/public_html/extra/php/query.php on line 57
+[04-Jul-2018 15:26:56 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home3/m3w0hhnr/public_html/extra/php/query.php on line 97
+[05-Jul-2018 06:08:11 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home3/m3w0hhnr/public_html/extra/php/query.php on line 48
+[05-Jul-2018 06:08:11 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home3/m3w0hhnr/public_html/extra/php/query.php on line 49
+[05-Jul-2018 06:08:11 America/Chicago] PHP Notice:  Trying to get property of non-object in /home3/m3w0hhnr/public_html/extra/php/query.php on line 93
+[05-Jul-2018 06:08:11 America/Chicago] PHP Notice:  Trying to get property of non-object in /home3/m3w0hhnr/public_html/extra/php/query.php on line 94
+[05-Jul-2018 06:10:26 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home3/m3w0hhnr/public_html/extra/php/query.php on line 48
+[05-Jul-2018 06:10:26 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home3/m3w0hhnr/public_html/extra/php/query.php on line 49
+[05-Jul-2018 06:10:26 America/Chicago] PHP Notice:  Trying to get property of non-object in /home3/m3w0hhnr/public_html/extra/php/query.php on line 93
+[05-Jul-2018 06:10:26 America/Chicago] PHP Notice:  Trying to get property of non-object in /home3/m3w0hhnr/public_html/extra/php/query.php on line 94
+[05-Jul-2018 06:11:28 America/Chicago] PHP Notice:  Trying to get property of non-object in /home3/m3w0hhnr/public_html/extra/php/query.php on line 93
+[05-Jul-2018 06:11:28 America/Chicago] PHP Notice:  Undefined variable: area in /home3/m3w0hhnr/public_html/extra/php/query.php on line 94
+[05-Jul-2018 06:11:28 America/Chicago] PHP Notice:  Trying to get property of non-object in /home3/m3w0hhnr/public_html/extra/php/query.php on line 94
+[05-Jul-2018 06:21:27 America/Chicago] PHP Notice:  Trying to get property of non-object in /home3/m3w0hhnr/public_html/extra/php/query.php on line 93
+[05-Jul-2018 06:21:27 America/Chicago] PHP Notice:  Undefined variable: area in /home3/m3w0hhnr/public_html/extra/php/query.php on line 94
+[05-Jul-2018 06:21:27 America/Chicago] PHP Notice:  Trying to get property of non-object in /home3/m3w0hhnr/public_html/extra/php/query.php on line 94
+[05-Jul-2018 06:24:06 America/Chicago] PHP Notice:  Trying to get property of non-object in /home3/m3w0hhnr/public_html/extra/php/query.php on line 93
+[05-Jul-2018 06:24:06 America/Chicago] PHP Notice:  Undefined variable: area in /home3/m3w0hhnr/public_html/extra/php/query.php on line 94
+[05-Jul-2018 06:24:06 America/Chicago] PHP Notice:  Trying to get property of non-object in /home3/m3w0hhnr/public_html/extra/php/query.php on line 94
+[05-Jul-2018 06:25:48 America/Chicago] PHP Notice:  Trying to get property of non-object in /home3/m3w0hhnr/public_html/extra/php/query.php on line 93
+[05-Jul-2018 06:25:48 America/Chicago] PHP Notice:  Trying to get property of non-object in /home3/m3w0hhnr/public_html/extra/php/query.php on line 94
+[05-Jul-2018 07:06:11 America/Chicago] PHP Parse error:  syntax error, unexpected 'array' (T_ARRAY), expecting ')' in /home3/m3w0hhnr/public_html/extra/php/query.php on line 101
+[05-Jul-2018 07:07:02 America/Chicago] PHP Notice:  Undefined variable: account_id in /home3/m3w0hhnr/public_html/extra/php/query.php on line 101
+[05-Jul-2018 07:08:02 America/Chicago] PHP Notice:  Undefined variable: account_id in /home3/m3w0hhnr/public_html/extra/php/query.php on line 101
+[05-Jul-2018 07:09:49 America/Chicago] PHP Notice:  Undefined variable: account_id in /home3/m3w0hhnr/public_html/extra/php/query.php on line 101
+[05-Jul-2018 07:10:36 America/Chicago] PHP Notice:  Undefined variable: account_id in /home3/m3w0hhnr/public_html/extra/php/query.php on line 101
+[05-Jul-2018 07:11:27 America/Chicago] PHP Notice:  Undefined variable: account_id in /home3/m3w0hhnr/public_html/extra/php/query.php on line 101
+[05-Jul-2018 07:12:49 America/Chicago] PHP Notice:  Undefined variable: account_id in /home3/m3w0hhnr/public_html/extra/php/query.php on line 101
+[05-Jul-2018 07:13:46 America/Chicago] PHP Notice:  Undefined variable: account_id in /home3/m3w0hhnr/public_html/extra/php/query.php on line 101
+[09-Jul-2018 17:04:49 America/Chicago] PHP Notice:  Undefined index: tipologia in /home3/m3w0hhnr/public_html/extra/php/query.php on line 48
+[09-Jul-2018 17:04:49 America/Chicago] PHP Notice:  Undefined index: area in /home3/m3w0hhnr/public_html/extra/php/query.php on line 49
+[09-Jul-2018 17:04:49 America/Chicago] PHP Notice:  Undefined index: descripcion in /home3/m3w0hhnr/public_html/extra/php/query.php on line 50
+[09-Jul-2018 17:05:04 America/Chicago] PHP Notice:  Undefined index: tipologia in /home3/m3w0hhnr/public_html/extra/php/query.php on line 48
+[09-Jul-2018 17:05:04 America/Chicago] PHP Notice:  Undefined index: area in /home3/m3w0hhnr/public_html/extra/php/query.php on line 49
+[09-Jul-2018 17:05:04 America/Chicago] PHP Notice:  Undefined index: descripcion in /home3/m3w0hhnr/public_html/extra/php/query.php on line 50
+[09-Jul-2018 17:05:31 America/Chicago] PHP Notice:  Undefined index: tipologia in /home3/m3w0hhnr/public_html/extra/php/query.php on line 48
+[09-Jul-2018 17:05:31 America/Chicago] PHP Notice:  Undefined index: area in /home3/m3w0hhnr/public_html/extra/php/query.php on line 49
+[09-Jul-2018 17:05:31 America/Chicago] PHP Notice:  Undefined index: descripcion in /home3/m3w0hhnr/public_html/extra/php/query.php on line 50
+[09-Jul-2018 17:08:45 America/Chicago] PHP Notice:  Undefined variable: sessId in /home3/m3w0hhnr/public_html/extra/php/buscar.php on line 48
+[09-Jul-2018 19:01:13 America/Chicago] PHP Notice:  Undefined variable: session_id in /home3/m3w0hhnr/public_html/extra/php/buscar.php on line 84
+[10-Jul-2018 10:02:29 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home3/m3w0hhnr/public_html/extra/php/buscar.php on line 68
+[10-Jul-2018 10:50:04 America/Chicago] PHP Notice:  Undefined index: cedula in /home3/m3w0hhnr/public_html/extra/php/buscar.php on line 46
+[10-Jul-2018 11:09:38 America/Chicago] PHP Notice:  Array to string conversion in /home3/m3w0hhnr/public_html/extra/php/buscar.php on line 92
+[10-Jul-2018 11:10:09 America/Chicago] PHP Notice:  Array to string conversion in /home3/m3w0hhnr/public_html/extra/php/buscar.php on line 92
+[10-Jul-2018 11:29:37 America/Chicago] PHP Parse error:  syntax error, unexpected 'S' (T_STRING), expecting ']' in /home3/m3w0hhnr/public_html/extra/php/buscar.php on line 94
+[10-Jul-2018 11:30:05 America/Chicago] PHP Notice:  Undefined offset: 0 in /home3/m3w0hhnr/public_html/extra/php/buscar.php on line 94

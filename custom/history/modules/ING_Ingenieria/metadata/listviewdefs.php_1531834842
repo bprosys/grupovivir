@@ -1,0 +1,75 @@
+<?php
+$module_name = 'ING_Ingenieria';
+$OBJECT_NAME = 'ING_INGENIERIA';
+$listViewDefs [$module_name] = 
+array (
+  'ING_INGENIERIA_NUMBER' => 
+  array (
+    'width' => '5%',
+    'label' => 'LBL_NUMBER',
+    'link' => true,
+    'default' => true,
+  ),
+  'ING_INGENIERIA_AOS_PRODUCTS_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_ING_INGENIERIA_AOS_PRODUCTS_FROM_AOS_PRODUCTS_TITLE',
+    'id' => 'ING_INGENIERIA_AOS_PRODUCTSAOS_PRODUCTS_IDB',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'STATUS' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_STATUS',
+    'default' => true,
+  ),
+  'ING_INGENIERIA_ACCOUNTS_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_ING_INGENIERIA_ACCOUNTS_FROM_ACCOUNTS_TITLE',
+    'id' => 'ING_INGENIERIA_ACCOUNTSACCOUNTS_IDB',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'FECHAPROGRAMADA_C' => 
+  array (
+    'type' => 'date',
+    'default' => true,
+    'label' => 'LBL_FECHAPROGRAMADA',
+    'width' => '10%',
+  ),
+  'FECHAENTREGA' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_FECHAENTREGA',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'DIAS_TRASCURRIDOS_ENTREGA' => 
+  array (
+    'type' => 'varchar',
+    'studio' => 'visible',
+    'label' => 'Dias Transcurridos Entrega',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'FECHARECONFIRMACIONCITA_C' => 
+  array (
+    'type' => 'date',
+    'default' => false,
+    'label' => 'LBL_FECHARECONFIRMACIONCITA',
+    'width' => '10%',
+  ),
+  'CONFIRMACION_ENTREGA' => 
+  array (
+    'type' => 'bool',
+    'default' => false,
+    'label' => 'LBL_CONFIRMACION_ENTREGA',
+    'width' => '10%',
+  ),
+);
+;
+?>

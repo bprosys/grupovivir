@@ -1,0 +1,45 @@
+<?php
+$module_name = 'AOS_Product_Categories';
+$listViewDefs [$module_name] = 
+array (
+  'NAME' => 
+  array (
+    'width' => '32%',
+    'label' => 'LBL_NAME',
+    'default' => true,
+    'link' => true,
+  ),
+  'CIUDAD_C' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_CIUDAD',
+    'width' => '10%',
+  ),
+  'DIRECCION_C' => 
+  array (
+    'type' => 'text',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_DIRECCION',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'CODIGO_CATEGORIA_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_CODIGO_CATEGORIA',
+    'width' => '10%',
+  ),
+  'IS_PARENT' => 
+  array (
+    'type' => 'bool',
+    'default' => false,
+    'label' => 'LBL_IS_PARENT',
+    'width' => '10%',
+  ),
+);
+;
+?>

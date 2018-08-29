@@ -1,0 +1,39 @@
+<?php
+$module_name = 'trami_Tramites';
+$OBJECT_NAME = 'TRAMI_TRAMITES';
+$listViewDefs [$module_name] = 
+array (
+  'DATE_ENTERED' => 
+  array (
+    'type' => 'datetime',
+    'label' => 'LBL_DATE_ENTERED',
+    'width' => '10%',
+    'default' => true,
+    'link' => true,
+  ),
+  'NUMERODEFINCA_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_NUMERODEFINCA',
+    'width' => '10%',
+    'link' => true,
+  ),
+  'BANCO_C' => 
+  array (
+    'type' => 'dynamicenum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_BANCO',
+    'width' => '10%',
+  ),
+  'CARTA_PROMESA_PAGO_C' => 
+  array (
+    'type' => 'date',
+    'default' => true,
+    'label' => 'LBL_CARTA_PROMESA_PAGO',
+    'width' => '10%',
+  ),
+);
+;
+?>

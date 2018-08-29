@@ -1,0 +1,126 @@
+<?php
+$module_name = 'ING_Ingenieria';
+$_object_name = 'ing_ingenieria';
+$viewdefs [$module_name] = 
+array (
+  'EditView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'useTabs' => false,
+      'tabDefs' => 
+      array (
+        'DEFAULT' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+      'syncDetailEditViews' => true,
+    ),
+    'panels' => 
+    array (
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ing_ingenieria_number',
+            'type' => 'readonly',
+          ),
+          1 => 
+          array (
+            'name' => 'dias_trascurridos_entrega',
+            'studio' => 'visible',
+            'label' => 'Dias Transcurridos Entrega',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ing_ingenieria_aos_products_name',
+          ),
+          1 => 
+          array (
+            'name' => 'ing_ingenieria_accounts_name',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'estacionamiento_c',
+            'label' => 'LBL_ESTACIONAMIENTO',
+          ),
+          1 => 
+          array (
+            'name' => 'depositos_c',
+            'label' => 'LBL_DEPOSITOS',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fechaprogramada_c',
+            'label' => 'LBL_FECHAPROGRAMADA',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fechaconfirmacion_c',
+            'label' => 'LBL_FECHACONFIRMACION',
+          ),
+          1 => '',
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fechareconfirmacioncita_c',
+            'label' => 'LBL_FECHARECONFIRMACIONCITA',
+          ),
+          1 => '',
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fechareconfirmacioncita2_c',
+            'label' => 'LBL_FECHARECONFIRMACIONCITA2',
+          ),
+          1 => '',
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fechaentrega',
+            'label' => 'LBL_FECHAENTREGA',
+          ),
+          1 => '',
+        ),
+      ),
+    ),
+  ),
+);
+;
+?>

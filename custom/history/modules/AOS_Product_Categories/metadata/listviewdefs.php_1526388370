@@ -1,0 +1,59 @@
+<?php
+$module_name = 'AOS_Product_Categories';
+$listViewDefs [$module_name] = 
+array (
+  'NUMERO_DE_FINCA_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_NUMERO_DE_FINCA',
+    'width' => '10%',
+  ),
+  'NAME' => 
+  array (
+    'width' => '32%',
+    'label' => 'LBL_NAME',
+    'default' => true,
+    'link' => true,
+  ),
+  'CODIGO_CATEGORIA_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_CODIGO_CATEGORIA',
+    'width' => '10%',
+  ),
+  'CATEGORIA_C' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_CATEGORIA',
+    'width' => '10%',
+  ),
+  'ESTADO_DEL_PROYECTO_C' => 
+  array (
+    'type' => 'dynamicenum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_ESTADO_DEL_PROYECTO',
+    'width' => '10%',
+  ),
+  'CIUDAD_C' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_CIUDAD',
+    'width' => '10%',
+  ),
+  'CANTUNID_C' => 
+  array (
+    'type' => 'int',
+    'default' => true,
+    'label' => 'LBL_CANTUNID',
+    'width' => '10%',
+  ),
+);
+;
+?>

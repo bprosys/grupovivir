@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GrupoVivir </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+  <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+</head>
+<body>
+ <div id="app">
+   <v-app light>
+    <v-toolbar class="white">
+      <v-toolbar-title ><img src="assets/logo.png" height="50px"></v-toolbar-title>
+    </v-toolbar>
+    <v-content>
+      <section>
+        <v-parallax src="assets/fondo.jpg" height="900">
+          <v-layout
+            column
+            align-center
+            justify-center
+            class="white--text"
+          >
+            <h1 class="white--text mb-2 display-1 text-xs-center">Formulario de Reclamos</h1>
+            <br>
+            <v-card width="50%">
+                
+            <v-container>
+              <v-form>
+                <v-text-field
+                label="Cedula"
+                v-model="cedula"
+                required
+                ></v-text-field>
+                <v-btn block flat color='blue' v-on:click="buscar">Buscar
+                <v-progress-circular
+                  v-if ="buscando"
+                  :size="20"
+                  color="primary"
+                  indeterminate
+                ></v-progress-circular>  
+                </v-btn>
+                <v-text-field
+                label="Email"
+                v-model="email"
+                disabled
+                ></v-text-field> 
+                <v-text-field
+                label="Nombre"
+                v-model="nombre"
+                disabled
+                ></v-text-field>
+                <v-text-field
+                label="unidad"
+                v-model="unidad"
+                disabled
+                ></v-text-field>  
+                <v-select label="Tipologia" :items="tipologia" v-model="tipologiaS" :disabled="activo">
+                </v-select></v-text-field>  
+                <v-select label="Area" :items="area" v-model="areaS" :disabled="activo">
+                </v-select></v-text-field>  
+                <v-textarea
+                label="Descripcion"
+                v-model="descripcion"
+                required
+                :disabled="activo"
+                ></v-textarea>
+              </v-form>
+               <v-alert
+                  v-model="exito"
+                  type="success"
+                  >
+                Su reclamo fue procesado!!.
+            </v-alert>
+            </v-container>
+            <v-card-actions>
+              <v-btn block flat color='blue' v-on:click="enviar" :disabled="activo">Enviar</v-btn>
+            </v-card-actions>
+          </v-card>
+          </v-layout>
+        </v-parallax>
+      </section>
+      <v-footer class="blue darken-2">
+        <v-layout row wrap align-center>
+          <v-flex xs12>
+            <div class="white--text ml-3">
+              Hecho por Byprosys C.A derechos reservados 2018
+            </div>
+          </v-flex>
+        </v-layout>
+      </v-footer>
+    </v-content>
+  </v-app>
+ </div>
+ <script src="https://unpkg.com/vue/dist/vue.js"></script>
+ <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
+ <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+ <script>
+   var app = new Vue({
+    el: '#app',
+    data:{
+        activo:true,
+        buscando: false,
+        cedula :'',
+        exito : '',
+        email:'',
+        descripcion:'',
+        tipologiaS:'',
+        areaS:'',
+        nombre:'',
+        tipologia : [
+        {text :'Ventanas',value:'1'},
+        {text :'Cerraduras',value:'6'},
+        {text :'Puertas',value:'7'},
+        {text :'Artefactos Sanitarios',value:'2'},
+        {text :'Accesorios de Baño',value:'3'},
+        {text :'Muebles de Closet y Cocina',value:'4'},
+        {text :'Griferia',value:'5'},
+        {text :'Herreria',value:'8'},
+        {text :'Detectores de Humo',value:'9'},
+        {text :'Estructura',value:'10'},
+        {text :'Sistema Electrico',value:'11'},
+        {text :'Plomeria',value:'12'},
+        {text :'Pisos y Azulejos',value:'13'},
+        {text :'Filtraciones',value:'14'},
+        {text :'Rajadura de Paredes',value:'15'},
+        {text :'Sobre de Granito',value:'16'}
+        ],
+        area : [
+        {text:'Sala',value:'1'},
+        {text:'Comedor',value:'2'},
+        {text:'Cocina',value:'3'},
+        {text:'Lavanderia',value:'4'},
+        {text:'Rec 1',value:'5'},
+        {text:'Rec 2',value:'6'},
+        {text:'Rec 3',value:'7'},
+        {text:'Baño 1',value:'8'},
+        {text:'Baño 2',value:'9'},
+        {text:'Baño Serv',value:'10'},
+        {text:'Rec Serv',value:'11'},
+        {text:'Balcon',value:'12'},
+        {text:'Exteriores',value:'13'},
+        {text:'Terraza',value:'14'},
+        {text:'Deposito',value:'15'},
+        {text:'Estacionamiento',value:'16'}]
+      },
+    methods :
+    {
+      enviar : function (event){
+        axios({
+          method: 'post',
+          url: '/extra/php/query.php', 
+          params: {
+            email :'sebastianmujica@gmail.com',
+            tipologia : this.tipologiaS,
+            area: this.areaS,
+            descripcion: this.descripcion 
+          }
+        }).then(response => (this.exito='alert'))},
+      buscar : function (event){
+        var self = this
+        this.buscando=true
+        axios({
+          method: 'post',
+          url: '/extra/php/buscar.php',
+          params: {
+            cedula: this.cedula
+          }
+        }).then(function (response) {
+            console.log(response.data.email1.value)
+            //this.email = response.data.email1.value
+            if (response != null){
+            self.email = response.data.email1.value
+            self.nombre = response.data.full_name.value  
+            self.activo=false
+            }
+            
+            self.buscando = false
+                })
+          .catch(function (error) {
+            console.log(error) 
+            self.buscando=false
+
+          })
+            
+      }
+
+    }
+  })
+ </script>
+</body>
+</html>

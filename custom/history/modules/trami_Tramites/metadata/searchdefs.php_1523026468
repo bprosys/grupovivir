@@ -1,0 +1,85 @@
+<?php
+$module_name = 'trami_Tramites';
+$searchdefs [$module_name] = 
+array (
+  'layout' => 
+  array (
+    'basic_search' => 
+    array (
+      'numero_de_finca_c' => 
+      array (
+        'type' => 'text',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_NUMERO_DE_FINCA',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'numero_de_finca_c',
+      ),
+      'trami_tramites_accounts_1_name' => 
+      array (
+        'type' => 'relate',
+        'link' => true,
+        'label' => 'LBL_TRAMI_TRAMITES_ACCOUNTS_1_FROM_ACCOUNTS_TITLE',
+        'id' => 'TRAMI_TRAMITES_ACCOUNTS_1ACCOUNTS_IDB',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'trami_tramites_accounts_1_name',
+      ),
+      'trami_tramites_aos_products_1_name' => 
+      array (
+        'type' => 'relate',
+        'link' => true,
+        'label' => 'LBL_TRAMI_TRAMITES_AOS_PRODUCTS_1_FROM_AOS_PRODUCTS_TITLE',
+        'id' => 'TRAMI_TRAMITES_AOS_PRODUCTS_1AOS_PRODUCTS_IDB',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'trami_tramites_aos_products_1_name',
+      ),
+    ),
+    'advanced_search' => 
+    array (
+      'trami_tramites_accounts_1_name' => 
+      array (
+        'type' => 'relate',
+        'link' => true,
+        'label' => 'LBL_TRAMI_TRAMITES_ACCOUNTS_1_FROM_ACCOUNTS_TITLE',
+        'width' => '10%',
+        'default' => true,
+        'id' => 'TRAMI_TRAMITES_ACCOUNTS_1ACCOUNTS_IDB',
+        'name' => 'trami_tramites_accounts_1_name',
+      ),
+      'trami_tramites_aos_product_categories_1_name' => 
+      array (
+        'type' => 'relate',
+        'link' => true,
+        'label' => 'LBL_TRAMI_TRAMITES_AOS_PRODUCT_CATEGORIES_1_FROM_AOS_PRODUCT_CATEGORIES_TITLE',
+        'width' => '10%',
+        'default' => true,
+        'id' => 'TRAMI_TRAM7114EGORIES_IDB',
+        'name' => 'trami_tramites_aos_product_categories_1_name',
+      ),
+      'valor_desembolso_c' => 
+      array (
+        'type' => 'currency',
+        'default' => true,
+        'label' => 'LBL_VALOR_DESEMBOLSO',
+        'currency_format' => true,
+        'width' => '10%',
+        'name' => 'valor_desembolso_c',
+      ),
+    ),
+  ),
+  'templateMeta' => 
+  array (
+    'maxColumns' => '3',
+    'maxColumnsBasic' => '4',
+    'widths' => 
+    array (
+      'label' => '10',
+      'field' => '30',
+    ),
+  ),
+);
+;
+?>

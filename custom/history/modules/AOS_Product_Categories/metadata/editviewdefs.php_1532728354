@@ -1,0 +1,106 @@
+<?php
+$module_name = 'AOS_Product_Categories';
+$viewdefs [$module_name] = 
+array (
+  'EditView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'useTabs' => false,
+      'tabDefs' => 
+      array (
+        'DEFAULT' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+      'syncDetailEditViews' => true,
+    ),
+    'panels' => 
+    array (
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'numero_de_finca_c',
+            'label' => 'LBL_NUMERO_DE_FINCA',
+          ),
+          1 => 
+          array (
+            'name' => 'codigo_categoria_c',
+            'label' => 'LBL_CODIGO_CATEGORIA',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 'name',
+          1 => 
+          array (
+            'name' => 'categoria_c',
+            'studio' => 'visible',
+            'label' => 'LBL_CATEGORIA',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 'description',
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ciudad_c',
+            'studio' => 'visible',
+            'label' => 'LBL_CIUDAD',
+          ),
+          1 => 
+          array (
+            'name' => 'direccion_c',
+            'studio' => 'visible',
+            'label' => 'LBL_DIRECCION',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'estado_del_proyecto_c',
+            'studio' => 'visible',
+            'label' => 'LBL_ESTADO_DEL_PROYECTO',
+          ),
+          1 => 
+          array (
+            'name' => 'cantunid_c',
+            'label' => 'LBL_CANTUNID',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'trami_tramites_aos_product_categories_1_name',
+          ),
+        ),
+      ),
+    ),
+  ),
+);
+;
+?>

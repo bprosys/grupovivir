@@ -1,0 +1,25 @@
+<?php
+// created: 2018-05-17 08:47:37
+$mod_strings = array (
+  'LNK_NEW_RECORD' => 'Crear Categorías de Producto',
+  'LNK_LIST' => 'Ver Categorías de Producto',
+  'LBL_LIST_FORM_TITLE' => 'Lista de Categorías de Producto',
+  'LBL_SEARCH_FORM_TITLE' => 'Buscar Categorías de Producto',
+  'LBL_PRODUCT_CATEGORYS_NAME' => 'Categoría Padre',
+  'LBL_SUB_CATEGORIES' => 'Sub categorías',
+  'LBL_PARENT_CATEGORY' => 'Categoría Padre',
+  'LBL_HOMEPAGE_TITLE' => 'Mis Categorías de Producto',
+  'LBL_AOS_PRODUCT_CATEGORIES_AOS_PRODUCTS_FROM_AOS_PRODUCTS_TITLE' => 'Categorías de producto: Unidad Inmobiliaria a partir del nombre del producto',
+  'AOS_Products' => 'Unidades Inmobiliarias',
+  'LBL_DIRECCION' => 'Direccion',
+  'LBL_CATEGORIA' => 'Categoria',
+  'LBL_CIUDAD' => 'Ciudad',
+  'LBL_ESTADO_DEL_PROYECTO' => 'Estado del proyecto',
+  'LBL_CODIGO_CATEGORIA' => 'Código Proyecto',
+  'LBL_NAME' => 'Nombre',
+  'LBL_CANTUNID' => 'Cantidad de Unidades',
+  'LBL_PROVINCIA' => 'Provincia',
+  'LBL_DISTRITO' => 'Distrito',
+  'LBL_CORREGIMIENTO' => 'Corregimiento',
+  'LBL_NUMERO_DE_FINCA' => 'Numero de finca',
+);

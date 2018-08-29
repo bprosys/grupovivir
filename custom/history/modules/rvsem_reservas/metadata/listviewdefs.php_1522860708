@@ -1,0 +1,8 @@
+<?php
+$module_name = 'rvsem_reservas';
+$OBJECT_NAME = 'RVSEM_RESERVAS';
+$listViewDefs [$module_name] = 
+array (
+);
+;
+?>

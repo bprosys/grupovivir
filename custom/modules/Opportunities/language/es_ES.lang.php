@@ -1,0 +1,28 @@
+<?php
+// created: 2018-05-16 09:05:39
+$mod_strings = array (
+  'LBL_LEADS' => 'Prospectos',
+  'LBL_LEADS_SUBPANEL_TITLE' => 'Prospectos',
+  'LNK_NEW_OPPORTUNITY' => 'Nueva Cliente Potencial',
+  'LNK_OPPORTUNITY_LIST' => 'Ver Clientes Potenciales',
+  'LNK_IMPORT_OPPORTUNITIES' => 'Importar Clientes Potenciales',
+  'LBL_LIST_FORM_TITLE' => 'Lista de Cliente Potenciales',
+  'LBL_SEARCH_FORM_TITLE' => 'Búsqueda de Cliente Potenciales',
+  'LBL_TOP_OPPORTUNITIES' => 'Mis Principales Clientes Potenciales',
+  'LBL_MY_CLOSED_OPPORTUNITIES' => 'Mis Clientes Potenciales Cerradas',
+  'LBL_AMOUNT' => 'Monto de la Cuenta',
+  'LBL_OPPORTUNITY_NAME' => 'Nombre Cliente Potencial:',
+  'LBL_MODULE_NAME' => 'Clientes Potenciales',
+  'LBL_OPPORTUNITIES_AOS_PRODUCT_CATEGORIES_1_FROM_AOS_PRODUCT_CATEGORIES_TITLE' => 'Proyectos Inmobiliarios de Interes',
+  'LBL_EDITVIEW_PANEL1' => 'Nuevo Panel 1',
+  'LBL_PROJECTS' => 'ProyectosOrig',
+  'LBL_PROJECTS_SUBPANEL_TITLE' => 'ProyectosOrig',
+  'LBL_AOS_QUOTES' => 'Cotización',
+  'LBL_MONTO_DE_OPORTUNIDAD' => 'Monto de Oportunidad',
+  'LBL_DATE_CLOSED' => 'Fecha posible de cierre',
+  'LBL_OPPORTUNITIES_RVSEM_RESERVAS_1_FROM_RVSEM_RESERVAS_TITLE' => 'Reservas',
+  'LBL_OPPORTUNITIES_RESER_RESERVAS_1_FROM_RESER_RESERVAS_TITLE' => 'Reserva',
+  'AOS_Quotes' => 'Cotizaciones',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contactos',
+  'LBL_DOCUMENTS_SUBPANEL_TITLE' => 'Documentos',
+);

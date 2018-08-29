@@ -1,0 +1,6 @@
+<?php
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_BUGS_AOS_PRODUCTS_1_FROM_AOS_PRODUCTS_TITLE'] = 'Unidad Inmobiliaria';
+$mod_strings['LBL_BUGS_ACCOUNTS_1_FROM_ACCOUNTS_TITLE'] = 'Cuentas';
+$mod_strings['LBL_AOS_PRODUCTS_BUGS_1_FROM_AOS_PRODUCTS_TITLE'] = 'Unidad Inmobiliaria';
+$mod_strings['LBL_ACCOUNTS_BUGS_1_FROM_ACCOUNTS_TITLE'] = 'Cuentas';

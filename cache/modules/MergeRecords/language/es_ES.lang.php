@@ -1,0 +1,28 @@
+<?php
+// created: 2018-08-27 19:16:25
+$mod_strings = array (
+  'LBL_MODULE_NAME' => 'Combinación de Registros',
+  'LBL_MODULE_TITLE' => 'Combinación de Registros: Inicio',
+  'LBL_SEARCH_FORM_TITLE' => 'Búsqueda de Combinaciones',
+  'LBL_LIST_FORM_TITLE' => 'Lista de Combinaciones',
+  'LBL_LBL_MERGE_RECORDS_STEP_1' => 'Búsqueda de Registros con los que Combinar',
+  'LBL_AVAIL_FIELDS' => 'Campos Disponibles',
+  'LBL_FILTER_COND' => 'Condición de Filtrado',
+  'LBL_MERGE_VALUE_OVER' => 'Combinar valores sobre',
+  'LBL_NEXT_STEP_TITLE' => 'Ir al Siguiente Paso',
+  'LBL_NEXT_STEP_BUTTON_LABEL' => 'Siguiente Paso >',
+  'LBL_PERFORM_MERGE_BUTTON_TITLE' => 'Realizar Combinación',
+  'LBL_PERFORM_MERGE_BUTTON_KEY' => 'P',
+  'LBL_PERFORM_MERGE_BUTTON_LABEL' => 'Realizar Combinación',
+  'LBL_SAVE_MERGED_RECORD_BUTTON_TITLE' => 'Guardar Combinación',
+  'LBL_SAVE_MERGED_RECORD_BUTTON_LABEL' => 'Guardar Combinación',
+  'LBL_STEP2_FORM_TITLE' => 'Registros Encontrados con los que Combinar',
+  'LBL_SELECT_ERROR' => 'Debe realizar una selección antes de continuar.',
+  'LBL_CHANGE_PARENT' => 'Establecer como principal',
+  'LBL_REMOVE_FROM_MERGE' => 'Quitar',
+  'LBL_DIFF_COL_VALUES' => 'Columnas cuyo valor en la fila principal difiere del valor en las filas de combinación:',
+  'LBL_SAME_COL_VALUES' => 'Columnas cuyo valor es similar en todas las filas:',
+  'LBL_DELETE_MESSAGE' => 'Esta acción eliminará los siguientes registros:',
+  'LBL_PROCEED' => '¿Continuar?',
+  'LBL_STEP1_DIRECTIONS' => 'Se han encontrado registros con posibles duplicados. Cuando se encuentran posibles duplicados, puede seleccionar aquellos registros que desea combinar con el registro actual.',
+);

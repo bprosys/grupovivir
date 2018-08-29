@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GrupoVivir </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+  <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+</head>
+<body>
+ <div id="app">
+   <v-app light>
+    <v-toolbar class="white">
+      <v-toolbar-title ><img src="assets/logo.png" height="50px"></v-toolbar-title>
+    </v-toolbar>
+    <v-content>
+      <v-container fluid fill-height>
+        <v-layout align-center justify-center>
+          <v-flex xs12 sm8 md4>
+            <v-card class="elevation-12">
+              <v-toolbar dark color="white">
+                <v-toolbar-title class="grey--text" >Formulario de Garantías</v-toolbar-title>
+                <v-spacer></v-spacer>
+              </v-toolbar>
+              <v-card-text>
+                <v-form>
+                  <v-text-field
+                label="Cedula"
+                v-model="cedula"
+                required
+                ></v-text-field>
+                <v-btn block flat color='blue' v-on:click="buscar">Buscar</v-btn><v-spacer></v-spacer>
+                <v-progress-linear v-if ="buscando" :indeterminate="true"></v-progress-linear>
+                <v-text-field
+                label="Email"
+                v-model="email"
+                disabled
+                ></v-text-field> 
+                <v-text-field
+                label="Nombre"
+                v-model="nombre"
+                disabled
+                ></v-text-field>
+                <v-select label="Unidades" :items="unidades" v-model="unidadeS" :disabled="activo" return-object>
+                </v-select>
+                <v-select label="Tipologia" :items="tipologia" v-model="tipologiaS" :disabled="activo" return-object>
+                </v-select></v-text-field>  
+                <v-select label="Area" :items="area" v-model="areaS" :disabled="activo" return-object>
+                </v-select></v-text-field>  
+                <v-textarea
+                label="Descripcion"
+                v-model="descripcion"
+                required
+                :disabled="activo"
+                ></v-textarea>
+                </v-form>
+                 <v-alert
+                  v-model="exito"
+                  type="success"
+                  dismissible
+                  >
+                Su garantia {{ unidadeS.text }} en el area {{ areaS.text }} por {{ tipologiaS.text }}  fue procesada!!.
+                han transcurrido {{dias}} dias desde la fecha entrega
+            </v-alert>
+            <v-alert
+                  v-model="error"
+                  type="error"
+                  dismissible
+                  >
+                La garantia {{ unidadeS.text }} no procede!!
+                han transcurrido {{dias}} dias desde la fecha entrega            
+              </v-alert>
+              </v-card-text>
+              <v-card-actions>
+              <v-btn block flat color='blue' v-on:click="enviar" :disabled="activo">Enviar</v-btn>
+              <v-progress-linear v-if ="buscando2" :indeterminate="true"></v-progress-linear>
+              </v-card-actions>
+            </v-card>
+          </v-flex>
+        </v-layout>
+      </v-container>
+</v-content>
+  </v-app>
+ </div>
+ <script src="https://unpkg.com/vue/dist/vue.js"></script>
+ <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
+ <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+ <script>
+   var app = new Vue({
+    el: '#app',
+    data:{
+        activo:true,
+        buscando: false,
+        buscando2: false,
+        cedula :'',
+        exito : '',
+        error : '',
+        email:'',
+        descripcion:'',
+        tipologiaS:'',
+        areaS:'',
+        nombre:'',
+        unidad:'',
+        id_unidad:'',
+        id_cuenta:'',
+        dias : '',
+        unidadeS:'',
+        tipologia : [
+        {text :'Ventanas',value:'1'},
+        {text :'Cerraduras',value:'6'},
+        {text :'Puertas',value:'7'},
+        {text :'Artefactos Sanitarios',value:'2'},
+        {text :'Accesorios de Baño',value:'3'},
+        {text :'Muebles de Closet y Cocina',value:'4'},
+        {text :'Griferia',value:'5'},
+        {text :'Herreria',value:'8'},
+        {text :'Detectores de Humo',value:'9'},
+        {text :'Estructura',value:'10'},
+        {text :'Sistema Electrico',value:'11'},
+        {text :'Plomeria',value:'12'},
+        {text :'Pisos y Azulejos',value:'13'},
+        {text :'Filtraciones',value:'14'},
+        {text :'Rajadura de Paredes',value:'15'},
+        {text :'Sobre de Granito',value:'16'}
+        ],
+        area : [
+        {text:'Sala',value:'1'},
+        {text:'Comedor',value:'2'},
+        {text:'Cocina',value:'3'},
+        {text:'Lavanderia',value:'4'},
+        {text:'Rec 1',value:'5'},
+        {text:'Rec 2',value:'6'},
+        {text:'Rec 3',value:'7'},
+        {text:'Baño 1',value:'8'},
+        {text:'Baño 2',value:'9'},
+        {text:'Baño Serv',value:'10'},
+        {text:'Rec Serv',value:'11'},
+        {text:'Balcon',value:'12'},
+        {text:'Exteriores',value:'13'},
+        {text:'Terraza',value:'14'},
+        {text:'Deposito',value:'15'},
+        {text:'Estacionamiento',value:'16'}],
+        unidades : []
+
+      },
+    methods :
+    {
+      enviar : function (event){
+        var self = this
+        this.buscando2 = true
+        axios({
+          method: 'post',
+          url: '/grupovivir/garantias/php/query.php', 
+          params: {
+            email :this.email,
+            tipologia : this.tipologiaS,
+            area: this.areaS,
+            descripcion: this.descripcion, 
+            id_unidad: this.unidadeS,
+            id_cuenta: this.id_cuenta,
+           // nombre_unidad : this.unidadeS
+          }
+        }).then( function (response) {
+          self.buscando2 = false
+          console.log(response.data.no_procede)
+          console.log(response.data.diasTranscurridos)
+          
+          if (response.data.diasTranscurridos == 99999999)
+            {
+              self.dias= 'Error'
+            }else {
+              self.dias= response.data.diasTranscurridos
+            }
+          //alert(response.data.diasTranscurridos)
+          if ((response.data.no_procede == 1 )|| response == undefined){
+           self.error='alert'   
+          }else {
+           self.exito='alert'  
+          }
+
+        })
+        },
+      buscar : function (event){
+        var self = this
+        this.buscando=true
+        axios({
+          method: 'post',
+          url: '/grupovivir/garantias/php/buscar.php',
+          params: {
+            cedula: this.cedula.trim()
+          }
+        }).then(function (response) {
+            //console.log(response.data.unidades)
+            var unidades =response.data.unidades
+            //this.email = response.data.email1.value
+            if (response != null){
+            self.email = response.data.datos_cliente.email1.value
+            self.nombre = response.data.datos_cliente.full_name.value  
+            //self.unidad = response.data.unidad.value +" "+ response.data.categoria_unidad.name.value+" "+response.data.piso.value+" "+response.data.modelo.value//+" "+response.data.ala.value
+            //self.id_unidad = response.data.id_unidad.value
+            self.id_cuenta = response.data.id_cuenta
+            self.activo=false
+             
+            unidades.forEach(function (valor, indice, arreglo){
+              
+              /*console.log(valor.id)item-text
+              console.log(valor.name_value_list.name.value)
+              console.log(valor.name_value_list.piso_c.value)
+              console.log(valor.name_value_list.modelo_c.value)
+              console.log(valor.name_value_list.ala_c.value)
+              console.log(valor.proyecto[0].records[0].link_value.id.value)
+              console.log(valor.proyecto[0].records[0].link_value.name.value)
+              */
+              self.unidades.push({text:valor.proyecto[0].records[0].link_value.name.value+'-'+valor.name_value_list.piso_c.value+valor.name_value_list.modelo_c.value+valor.name_value_list.ala_c.value,
+                             value:valor.id})
+              })
+
+            }else{
+              alert("Registro no encontrado")
+
+            }
+            
+            self.buscando = false
+                })
+          .catch(function (error) {
+            console.log(error) 
+            self.buscando=false
+            alert("Registro no encontrado")
+
+          })
+            
+      }
+
+    }
+  })
+ </script>
+</body>
+</html>
+<style type="text/css">
+
+</style>
